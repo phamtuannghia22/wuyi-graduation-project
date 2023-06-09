@@ -1,0 +1,35 @@
+@import './base.css';
+
+
+:root {
+  --wuyi-dark-blue: #191245;
+  --wuyi-pink: #EE3E77
+}
+
+.font-size-13 {
+  font-size: 13px;
+}
+
+.font-size-15 {
+  font-size: 16px;
+}
+
+
+/** {*/
+/*  font-family: 'Montserrat';*/
+/*}*/
+
+.max-with-1125 {
+  max-width: 1125px;
+}
+.bg-blue {
+  background-color: var(--wuyi-dark-blue);  
+}
+.text-pink {
+  color: var(--wuyi-pink);
+}
+
+#app {
+  font-weight: normal;
+
+}
