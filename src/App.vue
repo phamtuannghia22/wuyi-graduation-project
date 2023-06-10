@@ -6,8 +6,8 @@
     <div class="row">
       <div class="col-8 pe-0 h-80vh">
         <video controls autoplay="autoplay" loop="loop" preload="preload" poster="../src/assets/logo.svg">
-<!--          <source src="../src/assets/my-treasure.mp4" type="video/mp4" />-->
-<!--          <source src="../src/assets/my-treasure.mp4" type="video/ogg" />-->
+          <source src="../src/assets/my-treasure.mp4" type="video/mp4" />
+          <source src="../src/assets/my-treasure.mp4" type="video/ogg" />
           Your browser does not support the video tag.
         </video>
       </div>
