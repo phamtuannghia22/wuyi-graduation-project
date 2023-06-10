@@ -1,29 +1,3 @@
-<script>
-// import { RouterLink, RouterView } from 'vue-router'
-// import HelloWorld from './components/HelloWorld.vue'
-export default {
-  name: 'App',
-  data() {
-    return {
-      user : {
-        name : '',
-        phone : '',
-        email : '',
-        messsage : ''
-      }
-    }
-  },
-  methods : {
-    send() {
-      this.$bvToast.toast(`This is toast number`, {
-        title: 'BootstrapVue Toast',
-        autoHideDelay: 5000,
-      })
-    }
-  }
-}
-</script>
-
 <template>
   <div id="home" class="max-with-1125 container-fluid">
     <h1 class="my-2">
@@ -48,7 +22,7 @@ export default {
               <b-form-textarea class="max-height mb-2 p-2" placeholder="Tin nhắn của bạn" v-model="user.messsage"></b-form-textarea>
               <div class="d-flex justify-content-center">
                 <b-button size="sm" class="mx-auto" @click="send()">Gửi <i class="ms-1 bi bi-arrow-right"></i></b-button>
-                
+
               </div>
             </div>
             <p class="text-center fw-bold text-pink text-uppercase mb-1">hoặc liên hệ</p>
@@ -60,6 +34,29 @@ export default {
     </div>
   </div>
 </template>
+<script>
+export default {
+  name: 'App',
+  data() {
+    return {
+      user : {
+        name : '',
+        phone : '',
+        email : '',
+        messsage : ''
+      }
+    }
+  },
+  methods : {
+    send() {
+      this.$bvToast.toast(`This is toast number`, {
+        title: 'BootstrapVue Toast',
+        autoHideDelay: 3000,
+      })
+    }
+  }
+}
+</script>
 
 <style scoped>
 #home {
@@ -67,7 +64,7 @@ export default {
 }
 video {
   width: 100%;
-  height: 100%;  
+  height: 100%;
 }
 button {
   background: var(--wuyi-pink);
