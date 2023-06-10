@@ -26,7 +26,6 @@
 .text-pink {
   color: var(--wuyi-pink);
 }
-
-#app {
-  font-weight: normal;
+.modal-body {
+  background: var(--wuyi-dark-blue) !important;
 }

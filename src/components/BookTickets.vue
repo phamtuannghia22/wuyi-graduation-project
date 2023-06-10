@@ -1,6 +1,6 @@
 <template>
-  <div class="d-flex justify-content-center align-items-center h-100">
-    <div class="m-auto w-75 d-grid">
+  <div class="d-flex justify-content-center align-items-center h-100 position-relative">
+    <div class="m-auto w-75 d-grid pt-2">
       <div class="waviy d-flex justify-content-center mb-2">
         <span style="--i: 1;">Đ</span>
         <span style="--i: 2;">Ặ</span>
@@ -18,7 +18,7 @@
         <b-form-input size="sm" class="mb-2" placeholder="Email" v-model="user.email"></b-form-input>
         <b-form-textarea class="max-height mb-2 p-2" placeholder="Tin nhắn của bạn" v-model="user.messsage"></b-form-textarea>
         <div class="d-flex justify-content-center">
-          <b-button size="sm" class="mx-auto" @click="send()">Gửi <b-icon class="ms-1" icon="arrow-right" animation="cylon" font-scale="1"></b-icon> </b-button>
+          <b-button size="sm" class="mx-auto" @click="send()">Gửi <b-icon class="ml-1" icon="arrow-right" animation="cylon" font-scale="1"></b-icon> </b-button>
         </div>
       </div>
       <p class="text-center fw-bold text-pink text-uppercase mb-1">hoặc liên hệ</p>
@@ -27,6 +27,7 @@
       </a>
       <p class="text-center text-pink mb-0">Cảm ơn đã ghé thăm!</p>
     </div>
+    <b-icon class="ml-1 text-white position-absolute close-icon" icon="dash-circle" font-scale="1" @click="$bvModal.hide('modal-book-tickets')"></b-icon>
   </div>
 </template>
 <script>
@@ -113,6 +114,12 @@ button:hover {
   80% {
     transform: rotateY(360deg);
   }
+}
+
+.close-icon {
+  top: 0px;
+  right: 0px;
+  cursor: pointer;
 }
 
 </style>
