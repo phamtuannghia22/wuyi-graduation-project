@@ -1,9 +1,8 @@
-@import './base.css';
-
+@import "./base.css";
 
 :root {
   --wuyi-dark-blue: #191245;
-  --wuyi-pink: #EE3E77
+  --wuyi-pink: #ee3e77;
 }
 
 .font-size-13 {
@@ -13,7 +12,6 @@
 .font-size-15 {
   font-size: 16px;
 }
-
 
 /** {*/
 /*  font-family: 'Montserrat';*/
@@ -31,5 +29,4 @@
 
 #app {
   font-weight: normal;
-
 }
