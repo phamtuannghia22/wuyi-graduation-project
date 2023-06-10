@@ -1,7 +1,7 @@
 <template>
   <div id="home">
     <header class="p-2 d-flex justify-content-between align-items-center">
-      <img class="py-1 ml-2" src="src/assets/logo.svg" width="69">
+      <img class="py-1 ml-2" src="../src/assets/logo-tuphu.svg" width="69">
       <b-button size="md" @click="$bvModal.show('modal-book-tickets')">Đặt vé <b-icon class="ml-1 my-auto" icon="person-plus" animation="throb" font-scale="1"></b-icon></b-button>
     </header>
     <div id="container-content" class="d-flex justify-content-center align-items-center">

@@ -18,7 +18,7 @@
         <b-form-input size="sm" class="mb-2" placeholder="Email" v-model="user.email"></b-form-input>
         <b-form-textarea class="max-height mb-2 p-2" placeholder="Tin nhắn của bạn" v-model="user.messsage"></b-form-textarea>
         <div class="d-flex justify-content-center">
-          <b-button size="sm" class="mx-auto" @click="send()">Gửi <b-icon class="ml-1" icon="arrow-right" animation="cylon" font-scale="1"></b-icon> </b-button>
+          <b-button size="sm" class="mx-auto" @click="$bvModal.hide('modal-book-tickets'); send()">Gửi <b-icon class="ml-1" icon="arrow-right" animation="cylon" font-scale="1"></b-icon> </b-button>
         </div>
       </div>
       <p class="text-center fw-bold text-pink text-uppercase mb-1">hoặc liên hệ</p>
@@ -63,7 +63,7 @@ export default {
       }
       this.$bvToast.toast("Đặt vé thành công ! Thông tin sự kiện sẽ được gửi đến bạn trong vài giờ tới. Chân thành cảm ơn", {
         title: "Thông báo",
-        autoHideDelay: 5000,
+        autoHideDelay: 10000,
         variant: "success",
         toaster: "b-toaster-top-right",
       });
