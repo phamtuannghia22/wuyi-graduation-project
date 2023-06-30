@@ -13,9 +13,9 @@
   font-size: 16px;
 }
 
-/** {*/
-/*  font-family: 'Montserrat';*/
-/*}*/
+* {
+  font-family: 'Montserrat';
+}
 
 .max-with-1125 {
   max-width: 1125px;
